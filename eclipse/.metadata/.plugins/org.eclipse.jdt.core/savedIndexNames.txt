@@ -1,0 +1,4 @@
+INDEX VERSION 1.127+C:\Users\Goecke\Documents\EclipsePortable\Data\mc\Atomic-Power\eclipse\.metadata\.plugins\org.eclipse.jdt.core
+1935584639.index
+286606776.index
+2328269416.index
