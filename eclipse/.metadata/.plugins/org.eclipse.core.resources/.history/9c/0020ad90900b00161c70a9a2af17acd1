@@ -1,0 +1,26 @@
+package de.atomicpower.Main;
+
+import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class CTab extends CreativeTabs{
+
+	private Item icon;
+	
+	public CTab(String lable, Object iconItem) {
+		super(lable);
+		
+		if(iconItem instanceof Block){
+			icon = Item.getItemFromBlock((Block) iconItem);
+		}else if(iconItem instanceof Item){
+			icon = (Item) iconItem;
+		}
+		
+	}
+
+	public Item getTabIconItem(){
+		return icon;
+	}
+	
+}

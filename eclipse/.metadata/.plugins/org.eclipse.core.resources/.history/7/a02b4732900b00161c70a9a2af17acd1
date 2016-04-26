@@ -1,0 +1,9 @@
+package de.atomicpower.Main;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class AtomicTabs {
+
+	public static CreativeTabs blocks;
+	
+}

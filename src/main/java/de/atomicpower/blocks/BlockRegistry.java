@@ -17,7 +17,7 @@ public class BlockRegistry {
 	
 	public BlockRegistry() {
 		
-		blockList.put("atomicGenerator", new AtomicGenerator("atomicGenerator", Material.ground, CreativeTabs.tabRedstone));
+		blockList.put("atomicGenerator", new AtomicGenerator("atomicGenerator", Material.ground));
 		
 	}
 	

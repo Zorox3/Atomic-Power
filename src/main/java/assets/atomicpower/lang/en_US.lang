@@ -1,2 +1,6 @@
 tile.atomicGenerator.name=Atomic Generator
-item.atomicStick.name=Atmoic Stick
+
+item.atomicStick.name=Atomic Stick
+
+itemGroup.atomicBlocksTab=Atomic Blocks
+itemGroup.atomicItemsTab=Atomic Items

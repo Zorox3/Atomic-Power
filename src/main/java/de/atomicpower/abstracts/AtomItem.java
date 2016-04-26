@@ -1,6 +1,8 @@
 package de.atomicpower.abstracts;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import de.atomicpower.Main.AtomicPower;
+import de.atomicpower.creativetabs.AtomicTabs;
 import de.atomicpower.lib.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -8,23 +10,24 @@ import net.minecraft.item.Item;
 public abstract class AtomItem extends Item {
 
 	protected String name;
-	protected CreativeTabs tab;
 
-	public AtomItem(String name, CreativeTabs tab) {
+	public AtomItem(String name) {
 		this.name = name;
-		this.tab = tab;
+		
+		setTexture();
+		setUnlocalizedName(name);
+
 	}
 
 	public void mainRegister() {
 		init();
 		register();
+		
 	}
 
 	private void init() {
-		setUnlocalizedName(name);
-		setCreativeTab(tab);	
+		setCreativeTab(AtomicPower.tabs.get("items"));	
 		
-		setTexture();
 	}
 
 	private void register() {

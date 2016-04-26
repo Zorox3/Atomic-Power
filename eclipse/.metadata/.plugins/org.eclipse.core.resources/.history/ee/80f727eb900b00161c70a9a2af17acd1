@@ -1,0 +1,11 @@
+package de.atomicpower.Main;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class AtomicTabs {
+
+	public static final CreativeTabs BLOCKS  = new CTab("atomicBlocksTab", AtomicPower.blockRegistry.getItemByName("atomicGenerator"));
+	public static final CreativeTabs ITEMS  = new CTab("atomicItemTab", AtomicPower.itemRegistry.getItemByName("atomicStick"));
+
+	
+}

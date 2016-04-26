@@ -1,0 +1,25 @@
+package de.atomicpower.Main;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import de.atomicpower.blocks.AtomicGenerator;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class AtomicTabs {
+
+
+	private Map<String, CreativeTabs> tabs = new HashMap<String, CreativeTabs>();
+	
+	public AtomicTabs() {
+		tabs.put("blocks", new CTab("atomicBlocksTab", new AtomicGenerator("blockTabImage", Material.ground)));
+		tabs.put("items", new CTab("atomicItemTab", new AtomicGenerator("blockTabImage", Material.ground)));
+
+	}
+	
+	public CreativeTabs get(String key){
+		return tabs.get(key);
+	}
+	
+}
