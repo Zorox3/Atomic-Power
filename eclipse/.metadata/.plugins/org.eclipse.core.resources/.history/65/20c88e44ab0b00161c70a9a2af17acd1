@@ -1,0 +1,22 @@
+package de.atomicpower.blocks;
+
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import de.atomicpower.abstracts.AtomBlock;
+
+public class AtomicGenerator extends AtomBlock{
+
+	public AtomicGenerator(String name, Material material) {
+		super(name, material);
+	}
+
+	
+	public int getRenderType(){
+		return -1;
+	}
+	
+	public boolean isOpaqueCube(){
+		return false;
+	}
+	
+}

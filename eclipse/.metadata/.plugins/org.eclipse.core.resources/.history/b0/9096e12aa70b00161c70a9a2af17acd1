@@ -1,0 +1,11 @@
+package de.atomicpower.items;
+
+import de.atomicpower.abstracts.AtomItem;
+
+public class AtomicGeneratorItem extends AtomItem{
+
+	public AtomicGeneratorItem(String name) {
+		super(name);
+	}
+
+}

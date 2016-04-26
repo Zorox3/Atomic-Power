@@ -1,0 +1,18 @@
+package de.atomicpower.abstracts;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.tileentity.TileEntity;
+
+public abstract class AtomTileEntity extends TileEntity{
+protected String name;
+
+public AtomTileEntity(String name) {
+this.name = name;
+}
+	
+
+	public void mainRegister() {
+		GameRegistry.registerTileEntity(this.class, name);
+	}
+	
+}

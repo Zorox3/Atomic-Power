@@ -1,0 +1,8 @@
+package de.atomicpower.tileEntities;
+
+import de.atomicpower.abstracts.AtomTileEntity;
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntityAtomicGenerator extends AtomTileEntity{
+
+}

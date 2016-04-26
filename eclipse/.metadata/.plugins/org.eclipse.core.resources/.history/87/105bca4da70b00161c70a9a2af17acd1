@@ -1,0 +1,18 @@
+package de.atomicpower.items;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+import de.atomicpower.abstracts.AtomItem;
+
+public class AtomicGeneratorItem extends AtomItem{
+
+	public AtomicGeneratorItem(String name) {
+		super(name);
+	}
+
+	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player){
+		return itemstack;
+	}
+	
+}

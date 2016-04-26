@@ -5,5 +5,9 @@ public class ServerProxy {
 	public void registerRenderInfo(){
 		
 	}
+
+	public void registerProxies() {
+
+	}
 	
 }

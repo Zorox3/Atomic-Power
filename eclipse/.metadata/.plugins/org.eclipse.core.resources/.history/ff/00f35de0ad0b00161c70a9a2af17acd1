@@ -1,0 +1,7 @@
+package de.atomicpower.abstracts;
+
+import net.minecraft.tileentity.TileEntity;
+
+public abstract class AtomTileEntity extends TileEntity{
+
+}

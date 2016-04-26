@@ -8,6 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.world.World;
 
 public abstract class AtomBlock extends Block {
 	protected String name;
@@ -30,7 +31,6 @@ public abstract class AtomBlock extends Block {
 
 	private void init() {
 		setCreativeTab(AtomicPower.tabs.get("blocks"));
-
 	}
 
 	private void register() {

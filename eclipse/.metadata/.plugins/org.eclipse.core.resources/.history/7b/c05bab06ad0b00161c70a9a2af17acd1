@@ -1,0 +1,5 @@
+package de.atomicpower.tileEntities;
+
+public class TileEntityAtomicGenerator {
+
+}

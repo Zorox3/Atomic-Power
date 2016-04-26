@@ -18,7 +18,8 @@ public class ItemRegistry {
 	public ItemRegistry() {
 		
 		itemList.put("atomicStick", new AtomicStick("atomicStick"));
-		
+		itemList.put("atomicGeneratorItem", new AtomicGeneratorItem("atomicGeneratorItem"));
+
 	}
 	
 	public void register(){
