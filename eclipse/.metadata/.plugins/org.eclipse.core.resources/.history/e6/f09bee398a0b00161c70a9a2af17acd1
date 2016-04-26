@@ -1,0 +1,18 @@
+package de.atomicpower.Main;
+
+public class CraftingManager {
+
+	public void init(){
+		initCraftingRecipies();
+		intiSmeltingRecipies();
+	}
+
+	private void intiSmeltingRecipies() {
+		
+	}
+
+	private void initCraftingRecipies() {
+		
+	}
+	
+}
