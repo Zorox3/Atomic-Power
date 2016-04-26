@@ -1,0 +1,27 @@
+package de.atomicpower.abstracts;
+
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public abstract class Registry {
+
+	protected String name;
+	protected CreativeTabs tab;
+
+	public Registry(String name,  CreativeTabs tab) {
+		this.name = name;
+		this.tab = tab;
+	}
+
+	public void mainRegister() {
+		init();
+		register();
+	}
+
+	abstract void register();
+
+	abstract void init();
+	
+	abstract void setTexture();
+	
+}

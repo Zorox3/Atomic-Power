@@ -1,0 +1,31 @@
+package de.atomicpower.Main;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import de.atomicpower.lib.Reference;
+
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION)
+public class AtomicPower {
+
+	@SidedProxy(clientSide = Reference.CLIENTPROXY, serverSide = Reference.SERVERPROXY)
+	
+	@EventHandler
+	public static void preInit(FMLPreInitializationEvent preEvent){
+		
+	}
+	
+	@EventHandler
+	public static void init(FMLInitializationEvent event){
+		
+	}
+	
+	@EventHandler
+	public static void postInit(FMLPostInitializationEvent postEvent){
+		
+	}
+	
+}

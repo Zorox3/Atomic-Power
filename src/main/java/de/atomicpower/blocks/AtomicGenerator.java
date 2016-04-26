@@ -1,0 +1,13 @@
+package de.atomicpower.blocks;
+
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import de.atomicpower.abstracts.AtomBlock;
+
+public class AtomicGenerator extends AtomBlock{
+
+	public AtomicGenerator(String name, Material material, CreativeTabs tab) {
+		super(name, material, tab);
+	}
+
+}

@@ -1,0 +1,14 @@
+package de.atomicpower.interfaces;
+
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public interface Registry {
+
+	public void mainRegister();
+
+	abstract void register();
+	abstract void init();
+	abstract void setTexture();
+	
+}

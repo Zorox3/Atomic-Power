@@ -1,0 +1,5 @@
+package de.atomicpower.interfaces;
+
+public interface Registry {
+
+}

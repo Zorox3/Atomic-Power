@@ -1,0 +1,5 @@
+package de.atomicpower.items;
+
+public class ItemRegistry {
+
+}
