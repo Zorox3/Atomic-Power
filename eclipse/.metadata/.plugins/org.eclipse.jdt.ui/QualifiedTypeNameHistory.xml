@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLPreInitializationEvent"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.EventHandler"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.SidedProxy"/>
+<fullyQualifiedTypeName name="de.atomicpower.Main.ServerProxy"/>
+<fullyQualifiedTypeName name="com.google.common.collect.Multiset.Entry"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="de.atomicpower.interfaces.Registry"/>
+<fullyQualifiedTypeName name="de.atomicpower.lib.Reference"/>
+<fullyQualifiedTypeName name="de.atomicpower.blocks.BlockRegistry"/>
+<fullyQualifiedTypeName name="de.atomicpower.abstracts.AtomBlock"/>
+<fullyQualifiedTypeName name="de.atomicpower.items.AtomicGenerator"/>
+<fullyQualifiedTypeName name="de.atomicpower.items.ItemRegistry"/>
+<fullyQualifiedTypeName name="de.atomicpower.items.AtomicStick"/>
+<fullyQualifiedTypeName name="de.atomicpower.Main.CraftingManager"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.IWorldGenerator"/>
+<fullyQualifiedTypeName name="de.atomicpower.world.AtomicWorld"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenMinable"/>
+<fullyQualifiedTypeName name="de.atomicpower.Main.CTab"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="net.minecraft.creativetab.CreativeTabs"/>
+<fullyQualifiedTypeName name="de.atomicpower.Main.AtomicTabs"/>
+<fullyQualifiedTypeName name="de.atomicpower.blocks.AtomicGenerator"/>
+<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Items"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="de.atomicpower.abstracts.AtomItem"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="de.atomicpower.items.AtomicGeneratorItem"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="de.atomicpower.abstracts.AtomBlockContainer"/>
+<fullyQualifiedTypeName name="net.minecraft.block.BlockContainer"/>
+<fullyQualifiedTypeName name="de.atomicpower.tileEntities.TileEntityAtomicGenerator"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.registry.GameRegistry"/>
+<fullyQualifiedTypeName name="de.atomicpower.abstracts.AtomTileEntity"/>
+<fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntity"/>
+<fullyQualifiedTypeName name="de.atomicpower.tileEntities.TileEntityRegistry"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.client.registry.ClientRegistry"/>
+<fullyQualifiedTypeName name="de.atomicpower.Main.AtomicPower"/>
+</qualifiedTypeNameHistroy>
