@@ -1,0 +1,105 @@
+package de.atomicpower.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.MovingObjectPosition;
+import net.minecraft.util.Vec3;
+import net.minecraft.world.World;
+import de.atomicpower.Main.AtomicPower;
+import de.atomicpower.abstracts.AtomBlock;
+import de.atomicpower.abstracts.AtomBlockContainer;
+import de.atomicpower.tileEntities.TileEntityAtomicGeneratorFloor;
+
+public class AtomicGeneratorFloor extends AtomBlockContainer {
+
+	private int structureSize = 3;
+
+	public AtomicGeneratorFloor(String name, Material material) {
+		super(name, material);
+
+		this.setBlockBounds(0, 0, 0, 1, 0.2f, 1);
+	}
+
+	public boolean renderAsNormalBlock() {
+		return false;
+	}
+
+	public boolean isOpaqueCube() {
+		return false;
+	}
+
+	public int getRenderType() {
+		return -1;
+	}
+
+	public void onNeighborBlockChange(World world, int x, int y, int z,
+			Block neighbor) {
+		updateMultiBlockStructure(world, x, y, z);
+	}
+
+	public void onBlockAdded(World world, int x, int y, int z) {
+		updateMultiBlockStructure(world, x, y, z);
+
+	}
+
+	public void updateMultiBlockStructure(World world, int x, int y, int z) {
+		isMultiBlockStructure(world, x, y, z);
+	}
+
+	public boolean isMultiBlockStructure(World world, int x, int y, int z) {
+		boolean mStructure = false;
+		boolean currentCheckStructure = true;
+
+		for (int x2 = 0; x2 < structureSize; x2++) {
+			for (int z2 = 0; z2 < structureSize; z2++) {
+				if (!mStructure) {
+					currentCheckStructure = true;
+					
+					for (int x3 = 0; x3 < structureSize; x3++) {
+						for (int z3 = 0; z3 < structureSize; z3++) {
+							if (currentCheckStructure
+									&& !world
+											.getBlock(x + x2 - x3, y,
+													z + z2 - z3)
+											.equals(AtomicPower.blockRegistry
+													.getItemByName("atomicGeneratorFloor"))) {
+								currentCheckStructure = false;
+							}
+						}
+					}
+					if (currentCheckStructure) {
+						for (int x3 = 0; x3 < structureSize; x3++) {
+							for (int z3 = 0; z3 < structureSize; z3++) {
+								world.setBlockMetadataWithNotify(x + x2 - x3, y, z + z2 - z3, x3 * structureSize + z3 + 1, 2);
+								System.out.println("set Meta");
+							}
+						}
+					}else{
+						System.out.println("not set Meta");
+
+					}
+				}
+				mStructure = currentCheckStructure;
+			}
+		}
+
+		if (mStructure)
+			return true;
+
+		if (world.getBlockMetadata(x, y, z) > 0)
+			world.setBlockMetadataWithNotify(x, y, z, 0, 3);
+
+		return false;
+	}
+
+	public void setTexture() {
+		setBlockTextureName("stone");
+	}
+
+	@Override
+	public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_) {
+		return new TileEntityAtomicGeneratorFloor(TileEntityAtomicGeneratorFloor.class, "atomicGeneratorFloorTile");
+	}
+
+}

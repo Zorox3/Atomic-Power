@@ -37,7 +37,7 @@ public class AtomicPower {
 
 		
 		craftingManager = new CraftingManager();
-		world = new AtomicWorld();
+		//world = new AtomicWorld();
 
 		itemRegistry.register();
 		blockRegistry.register();
@@ -46,7 +46,7 @@ public class AtomicPower {
 		
 		craftingManager.init();
 
-		world.mainRegistry();
+		//world.mainRegistry();
 
 		serverproxy.registerRenderInfo();
 

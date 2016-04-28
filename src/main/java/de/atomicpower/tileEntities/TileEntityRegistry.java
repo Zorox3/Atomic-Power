@@ -22,6 +22,8 @@ public class TileEntityRegistry {
 	public TileEntityRegistry() {
 		
 		tileEntityList.put("atomicGeneratorTile", new TileEntityAtomicGenerator(TileEntityAtomicGenerator.class, "atomicGeneratorTile"));
+		//tileEntityList.put("atomicGeneratorFloorTile", new TileEntityAtomicGeneratorFloor(TileEntityAtomicGeneratorFloor.class, "atomicGeneratorFloorTile"));
+
 		
 	}
 	

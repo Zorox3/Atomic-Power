@@ -4,14 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import de.atomicpower.abstracts.AtomBlock;
 import de.atomicpower.abstracts.AtomBlockContainer;
-import de.atomicpower.abstracts.AtomItem;
 
 public class BlockRegistry {
 	private Map <String, AtomBlock> blockList = new HashMap<String, AtomBlock>();
@@ -20,7 +15,9 @@ public class BlockRegistry {
 	
 	public BlockRegistry() {
 		
+		//blockContainerList.put("atomicGeneratorFloor", new AtomicGeneratorFloor("atomicGeneratorFloor", Material.rock));
 		blockContainerList.put("atomicGenerator", new AtomicGenerator("atomicGenerator", Material.rock));
+
 		
 	}
 	

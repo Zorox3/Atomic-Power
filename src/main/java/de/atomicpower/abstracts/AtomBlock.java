@@ -30,6 +30,11 @@ public abstract class AtomBlock extends Block {
 	}
 
 	private void init() {
+		setCreativeTab();
+	}
+
+	
+	protected void setCreativeTab() {
 		setCreativeTab(AtomicPower.tabs.get("blocks"));
 	}
 
@@ -37,7 +42,7 @@ public abstract class AtomBlock extends Block {
 		GameRegistry.registerBlock(this, name);
 	}
 
-	private void setTexture() {
+	protected void setTexture() {
 		setBlockTextureName(Reference.MOD_ID + ":" + name);
 	}
 }

@@ -1,0 +1,49 @@
+package de.atomicpower.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+import de.atomicpower.Main.AtomicPower;
+import de.atomicpower.abstracts.AtomBlock;
+import de.atomicpower.abstracts.AtomBlockContainer;
+
+public class AtomicGeneratorFloor extends AtomBlock{
+
+	public AtomicGeneratorFloor(String name, Material material) {
+		super(name, material);
+		
+		this.setBlockBounds(0, 0, 0, 1, 0.2f, 1);
+	}
+
+	public boolean renderAsNormalBlock(){
+		return false;
+	}
+	public boolean isOpaqueCube(){
+		return false;
+	}
+
+	public void onNeighborBlockChange(World world, int x, int y, int z, Block neighbor){
+		updateMultiBlockStructure(world, x, y, z);
+	}
+	
+	public void onBlockAdded(World world, int x, int y, int z){
+		updateMultiBlockStructure(world, x, y, z);
+
+	}
+	
+	public void updateMultiBlockStructure(World world, int x, int y, int z){
+		
+	}
+	
+	public boolean isMultiBlockStructure(World world, int x, int y, int z){
+		
+		
+		return false;
+	}
+	
+	public void setTexture(){
+		setBlockTextureName("stone");
+	}
+	
+}

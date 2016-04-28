@@ -6,6 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import de.atomicpower.Main.AtomicPower;
 import de.atomicpower.abstracts.AtomItem;
+import de.atomicpower.lib.Reference;
 
 public class AtomicGeneratorItem extends AtomItem {
 
@@ -18,13 +19,16 @@ public class AtomicGeneratorItem extends AtomItem {
 			World world, int x, int y, int z, int side, float x2, float y2,
 			float z2) {
 		if (!world.isRemote) {
-
-			return placeBlock(side, world, x, y, z,
-					AtomicPower.blockRegistry.getBlockContainerByName("atomicGenerator"));
+			if(side == 1){
+				world.setBlock(x, y+1, z, AtomicPower.blockRegistry.getBlockContainerByName("atomicGenerator"));
+			}
 		}
 		return false;
 	}
 	
+	public void setTexture(){
+		setTextureName("diamond");
+	}
 	
 
 }

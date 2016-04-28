@@ -1,0 +1,39 @@
+package de.atomicpower.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+import de.atomicpower.Main.AtomicPower;
+import de.atomicpower.abstracts.AtomBlock;
+import de.atomicpower.abstracts.AtomBlockContainer;
+
+public class AtomicGenerator extends AtomBlock{
+
+	public AtomicGenerator(String name, Material material) {
+		super(name, material);
+	}
+
+	
+	public int getRenderType(){
+		return -1;
+	}
+	
+	public boolean isOpaqueCube(){
+		return false;
+	}
+
+	public boolean renderAsNormalBlock(){
+		return false;
+	}
+
+	public void onNeighborBlockChange(World world, int x, int y, int z, Block neighbor){
+		
+	}
+	
+	public void onBlockAdded(World world, int x, int y, int z){
+		
+	}
+	
+	
+}

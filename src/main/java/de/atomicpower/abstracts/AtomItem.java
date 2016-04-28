@@ -36,7 +36,7 @@ public abstract class AtomItem extends Item {
 		GameRegistry.registerItem(this, name);
 	}
 
-	private void setTexture(){
+	protected void setTexture(){
 		setTextureName(Reference.MOD_ID + ":" + name);
 	}
 	protected boolean placeBlock(int side, World world, int x, int y, int z, Block placeBlock) {

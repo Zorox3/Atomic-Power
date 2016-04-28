@@ -1,0 +1,31 @@
+package de.atomicpower.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+import de.atomicpower.Main.AtomicPower;
+import de.atomicpower.abstracts.AtomBlock;
+import de.atomicpower.abstracts.AtomBlockContainer;
+
+public class AtomicGenerator extends AtomBlock{
+
+	public AtomicGenerator(String name, Material material) {
+		super(name, material);
+	}
+
+
+	public void onNeighborBlockChange(World world, int x, int y, int z, Block neighbor){
+		updateMultiBlockStructure(world, x, y, z);
+	}
+	
+	public void onBlockAdded(World world, int x, int y, int z){
+		updateMultiBlockStructure(world, x, y, z);
+
+	}
+	
+	public void updateMultiBlockStructure(World world, int x, int y, int z){
+		
+	}
+	
+}

@@ -8,9 +8,7 @@
 <fullyQualifiedTypeName name="com.google.common.collect.Multiset.Entry"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 <fullyQualifiedTypeName name="de.atomicpower.interfaces.Registry"/>
-<fullyQualifiedTypeName name="de.atomicpower.lib.Reference"/>
 <fullyQualifiedTypeName name="de.atomicpower.blocks.BlockRegistry"/>
-<fullyQualifiedTypeName name="de.atomicpower.abstracts.AtomBlock"/>
 <fullyQualifiedTypeName name="de.atomicpower.items.AtomicGenerator"/>
 <fullyQualifiedTypeName name="de.atomicpower.items.ItemRegistry"/>
 <fullyQualifiedTypeName name="de.atomicpower.items.AtomicStick"/>
@@ -32,15 +30,22 @@
 <fullyQualifiedTypeName name="de.atomicpower.abstracts.AtomItem"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 <fullyQualifiedTypeName name="de.atomicpower.items.AtomicGeneratorItem"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="net.minecraft.world.World"/>
-<fullyQualifiedTypeName name="de.atomicpower.abstracts.AtomBlockContainer"/>
 <fullyQualifiedTypeName name="net.minecraft.block.BlockContainer"/>
 <fullyQualifiedTypeName name="de.atomicpower.tileEntities.TileEntityAtomicGenerator"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.registry.GameRegistry"/>
 <fullyQualifiedTypeName name="de.atomicpower.abstracts.AtomTileEntity"/>
 <fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntity"/>
 <fullyQualifiedTypeName name="de.atomicpower.tileEntities.TileEntityRegistry"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.client.registry.ClientRegistry"/>
+<fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.Tessellator"/>
+<fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
+<fullyQualifiedTypeName name="de.atomicpower.lib.Reference"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="de.atomicpower.abstracts.AtomBlock"/>
+<fullyQualifiedTypeName name="net.minecraft.util.MovingObjectPosition"/>
+<fullyQualifiedTypeName name="de.atomicpower.renderer.AtomicGeneratorFloorRenderer"/>
+<fullyQualifiedTypeName name="de.atomicpower.abstracts.AtomBlockContainer"/>
 <fullyQualifiedTypeName name="de.atomicpower.Main.AtomicPower"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.client.registry.ClientRegistry"/>
 </qualifiedTypeNameHistroy>
